@@ -1,8 +1,8 @@
 import {Link} from "react-router-dom";
 
-const Menu = ({myref, width}) => {
+const Menu = ({myref}) => {
   return (
-    <section className="menu" ref={myref} style={{width: width}}>
+    <section className="menu" ref={myref}>
       <div className="menu__wrapper">
         <nav className="menu__navigation">
           <ul className="sidebar menu__sidebar">

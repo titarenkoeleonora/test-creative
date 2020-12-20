@@ -9,21 +9,20 @@ import Substring from "../Substring/Substring";
 import AboutMe from "../AboutMe/AboutMe";
 
 const App = () => {
-  const currentViewport  = document.documentElement.clientWidth;
-
-  const navigationRef = useRef(null);
-  const [menuWidth, setMenuWidth] = useState("0")
+  const menuRef = useRef(null);
+  const pageMainRef = useRef(null);
 
   const toggleMenu = () => {
-    setMenuWidth(menuWidth === "0" ? "250px" : "0");
+    menuRef.current.classList.toggle("menu--toggle");
+    pageMainRef.current.classList.toggle("page-main--menu-toggle");
   };
 
   return (
     <>
       <Router>
         <Header toggleMenu={toggleMenu} />
-        <main className="page-main" style={{marginLeft: menuWidth}}>
-          <Menu myref={navigationRef} width={menuWidth} />
+        <main className="page-main" ref={pageMainRef}>
+          <Menu myref={menuRef} />
           <Route path="/" component={AboutMe} exact />
           <Route path="/movement" component={Movement} />
           <Route path="/substring" component={Substring} />

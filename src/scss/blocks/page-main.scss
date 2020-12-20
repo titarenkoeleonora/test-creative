@@ -1,3 +1,9 @@
 .page-main {
   transition: margin-left 0.5s;
+
+  @media (min-width: $tablet) {
+    &--menu-toggle {
+      margin-left: 250px;
+    }
+  }
 }

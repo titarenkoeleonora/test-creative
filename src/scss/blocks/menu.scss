@@ -1,5 +1,5 @@
 .menu {
-  position: absolute;
+  position: fixed;
   z-index: 1;
   top: 55px;
   left: 0;
@@ -9,7 +9,19 @@
   overflow-x: hidden;
   transition: 0.5s;
 
+  &--toggle {
+    width: 250px;
+  }
+
   @media (min-width: $tablet) {
-    position: fixed;
+
+  }
+
+  @media (min-width: $desktop) {
+    width: 250px;
+
+    &--toggle {
+      width: 0;
+    }
   }
 }
