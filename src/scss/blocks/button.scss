@@ -1,0 +1,16 @@
+.button {
+  @include reset-button;
+  padding: 5px;
+  font-family: "Raleway";
+  text-transform: uppercase;
+  border: 1px solid $black;
+  border-radius: 5%;
+  transition: 0.5s;
+  outline: none;
+
+  &:hover,
+  &:focus {
+    background-color: $black;
+    color: $white;
+  }
+}

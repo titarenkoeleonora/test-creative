@@ -1,0 +1,29 @@
+.header {
+  height: 55px;
+  background-color: $dark-blue;
+}
+
+.header__wrapper {
+  padding: 10px 0;
+  display: flex;
+}
+
+.header__menu-toggle {
+  @include reset-button;
+  padding: 7px 20px;
+  color: $white;
+  background-color: transparent;
+  border: 1px solid $white;
+  border-radius: 5%;
+  cursor: pointer;
+  font-family: "Raleway";
+  font-size: 12px;
+  transition: 0.5s;
+  outline: none;
+
+  &:hover,
+  &:focus {
+    color: $orange;
+    background-color: $white;
+  }
+}

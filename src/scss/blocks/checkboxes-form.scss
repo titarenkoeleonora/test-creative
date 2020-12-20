@@ -1,0 +1,21 @@
+.checkboxes-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.checkboxes-form__list {
+  @include reset-list;
+}
+
+.checkboxes-form__item {
+  margin-bottom: 50px;
+}
+
+.checkboxes-form__label {
+  position: relative;
+  padding-left: 20px;
+}
+
+.checkboxes-form__animal {
+  position: absolute;
+}

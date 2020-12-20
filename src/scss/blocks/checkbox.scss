@@ -1,0 +1,51 @@
+.checkbox {
+  position: absolute;
+}
+
+.checkbox + .checkboxes-form__label::before {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 15px;
+  height: 15px;
+  top: -2px;
+  left: -2px;
+  border: 2px solid #e5e5e5;
+  background-color: transparent;
+  cursor: pointer;
+
+  @media (min-width: $tablet) {
+    width: 20px;
+    height: 20px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 29px;
+    height: 29px;
+    left: 1px;
+  }
+}
+
+.checkbox + .checkboxes-form__label:hover::before,
+.checkbox:focus+.checkboxes-form__label::before {
+  border-color: $white;
+}
+
+.checkbox + .checkboxes-form__label:active::before {
+  border-color: $white;
+}
+
+.checkbox:checked + .checkboxes-form__label::before {
+  content: '';
+  position: absolute;
+  display: block;
+  background-image: url('../../images/icon-yes.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-x: center;
+  background-position-y: center;
+
+  &:hover::before {
+    border-color: black;
+  }
+}

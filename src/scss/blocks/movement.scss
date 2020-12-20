@@ -1,0 +1,33 @@
+movement__wrapper {
+  width: 320px;
+}
+
+.movement__title {
+  width: 300px;
+  font-size: 18px;
+}
+
+.movement__form {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+}
+
+.movement__label {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.movement__input {
+  margin-bottom: 10px;
+}
+
+.movement__buttons-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.movement__result-text {
+  width: 300px;
+  font-size: 14px;
+}

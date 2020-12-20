@@ -1,0 +1,15 @@
+.menu {
+  position: absolute;
+  z-index: 1;
+  top: 55px;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: $dark-blue;
+  overflow-x: hidden;
+  transition: 0.5s;
+
+  @media (min-width: $tablet) {
+    position: fixed;
+  }
+}

@@ -1,0 +1,21 @@
+.sidebar {
+  @include reset-list;
+}
+
+.sidebar__item {
+  padding: 10px 20px;
+  width: 250px;
+}
+
+.sidebar__link {
+  text-decoration: none;
+  display: flex;
+  color: $white;
+  transition: 0.3s;
+  outline: none;
+
+  &:hover,
+  &:focus {
+    color: $orange;
+  }
+}

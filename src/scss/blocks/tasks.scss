@@ -1,0 +1,29 @@
+.tasks__wrapper {
+  min-width: 320px;
+  padding-right: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.tasks__title {
+  font-size: 14px;
+}
+
+.tasks__list {
+  @include reset-list;
+}
+
+.tasks__item {
+  margin-bottom: 10px;
+  font-size: 12px;
+}
+
+.tasks__link {
+  color: $black;
+  outline: none;
+
+  &:hover,
+  &:focus {
+    color: $orange;
+  }
+}
