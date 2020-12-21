@@ -25,6 +25,11 @@ const Movement = () => {
     );
   };
 
+  const resetForm = () => {
+    setArray([]);
+    setMovementCount(0);
+  };
+
   return (
     <section className="movement">
       <div className="container">
@@ -34,14 +39,15 @@ const Movement = () => {
           </h2>
           <form className="movement__form" method="post">
             <label className="movement__label" id="movement-array">
-              Введите числа
+              Введите числа или буквы
             </label>
             <input
               className="movement__input input-text"
-              type="number"
+              type="text"
               htmlFor="movement-array"
               ref={arrayInputElement}
               onInput={getArrayInputValues}
+              pattern="/\d+/g"
               required
             />
             <label className="movement__label" id="movement-count">
@@ -59,11 +65,17 @@ const Movement = () => {
               <button
                 className="movement__submit-button button"
                 type="submit"
+                aria-label="Показать результат"
                 onClick={moveArray}
               >
                 Показать результат
               </button>
-              <button className="movement__reset-button button" type="reset">
+              <button
+                className="movement__reset-button button"
+                type="reset"
+                aria-label="Очистить форму"
+                onClick={resetForm}
+              >
                 Очистить
               </button>
             </div>
