@@ -29,14 +29,16 @@ const Movement = () => {
     <section className="movement">
       <div className="container">
         <div className="movement__wrapper">
-          <h2 className="movement__title">Функция сдвига элементов массива вправо на N шагов</h2>
+          <h2 className="movement__title">
+            Функция сдвига элементов массива вправо на N шагов
+          </h2>
           <form className="movement__form" method="post">
             <label className="movement__label" id="movement-array">
-              Введите числа или буквы (без пробелов)
+              Введите числа
             </label>
             <input
-              className="movement__input"
-              type="text"
+              className="movement__input input-text"
+              type="number"
               htmlFor="movement-array"
               ref={arrayInputElement}
               onInput={getArrayInputValues}
@@ -46,8 +48,8 @@ const Movement = () => {
               Введите кол-во шагов для передвижения массива
             </label>
             <input
-              className="movement__input"
-              type="text"
+              className="movement__input  input-text"
+              type="number"
               htmlFor="movement-count"
               ref={countInputElement}
               onInput={getCountInputValue}
@@ -67,7 +69,9 @@ const Movement = () => {
             </div>
           </form>
 
-          <p className="movement__result-text">Для просмотра результата откройте консоль (F12)</p>
+          <p className="movement__result-text">
+            Для просмотра результата откройте консоль (F12)
+          </p>
         </div>
       </div>
     </section>

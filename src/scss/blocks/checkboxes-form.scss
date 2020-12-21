@@ -3,19 +3,39 @@
   flex-direction: column;
 }
 
+.checkboxes-form__title {
+  @include reset-text;
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
 .checkboxes-form__list {
   @include reset-list;
 }
 
 .checkboxes-form__item {
+  position: relative;
   margin-bottom: 50px;
+  font-size: 16px;
 }
 
 .checkboxes-form__label {
-  position: relative;
-  padding-left: 20px;
+  padding-left: 25px;
+
+  @media (min-width: $tablet) {
+    padding-left: 30px;
+  }
+
+  @media (min-width: $desktop) {
+    padding-left: 40px;
+  }
 }
 
 .checkboxes-form__animal {
   position: absolute;
+  top: -15px;
+  left: 90px;
+  @media (min-width: $desktop) {
+    left: 100px;
+  }
 }

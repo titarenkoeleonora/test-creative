@@ -1,6 +1,6 @@
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 
-const Menu = ({myref}) => {
+const Menu = ({ myref }) => {
   return (
     <section className="menu" ref={myref}>
       <div className="menu__wrapper">

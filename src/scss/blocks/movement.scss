@@ -1,33 +1,44 @@
-movement__wrapper {
-  width: 320px;
+.movement__wrapper {
+  padding: 10px 0;
+
+  @media (min-width: $tablet) {
+    padding: 30px 0;
+  }
 }
 
 .movement__title {
-  width: 300px;
-  font-size: 18px;
+  @include reset-text;
+  margin-bottom: 15px;
+  font-size: 16px;
+
+  @media (min-width: $tablet) {
+    font-size: 18px;
+  }
 }
 
 .movement__form {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   width: 250px;
 }
 
 .movement__label {
-  font-size: 14px;
   margin-bottom: 5px;
+  font-size: 16px;
 }
 
 .movement__input {
   margin-bottom: 10px;
+
 }
 
 .movement__buttons-wrapper {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .movement__result-text {
-  width: 300px;
-  font-size: 14px;
+  font-size: 16px;
 }

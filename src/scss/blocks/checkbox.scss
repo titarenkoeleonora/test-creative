@@ -3,43 +3,44 @@
 }
 
 .checkbox + .checkboxes-form__label::before {
-  content: '';
+  content: "";
   position: absolute;
   display: block;
-  width: 15px;
-  height: 15px;
-  top: -2px;
+  width: 20px;
+  height: 20px;
+  top: -1px;
   left: -2px;
-  border: 2px solid #e5e5e5;
+  border: 2px solid $light-grey;
   background-color: transparent;
   cursor: pointer;
 
   @media (min-width: $tablet) {
-    width: 20px;
-    height: 20px;
+    top: -3px;
+    width: 25px;
+    height: 25px;
   }
 
   @media (min-width: $desktop) {
+    top: -5px;
     width: 29px;
     height: 29px;
-    left: 1px;
   }
 }
 
 .checkbox + .checkboxes-form__label:hover::before,
-.checkbox:focus+.checkboxes-form__label::before {
-  border-color: $white;
+.checkbox:focus + .checkboxes-form__label::before {
+  border-color: $grey;
 }
 
 .checkbox + .checkboxes-form__label:active::before {
-  border-color: $white;
+  border-color: $black;
 }
 
 .checkbox:checked + .checkboxes-form__label::before {
-  content: '';
+  content: "";
   position: absolute;
   display: block;
-  background-image: url('../../images/icon-yes.svg');
+  background-image: url("../../images/icon-yes.svg");
   background-repeat: no-repeat;
   background-size: contain;
   background-position-x: center;

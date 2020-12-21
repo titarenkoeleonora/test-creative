@@ -1,0 +1,17 @@
+.checkboxes__wrapper {
+  padding: 10px 0;
+
+  @media (min-width: $tablet) {
+    padding: 30px 0;
+  }
+}
+
+.checkboxes__title {
+  @include reset-text;
+  margin-bottom: 15px;
+  font-size: 16px;
+
+  @media (min-width: $tablet) {
+    font-size: 18px;
+  }
+}

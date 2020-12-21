@@ -5,7 +5,7 @@ const animals = [
   },
   {
     id: "cat",
-    title: "Кошка",
+    title: "Кот",
   },
   {
     id: "mouse",

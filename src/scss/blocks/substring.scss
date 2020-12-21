@@ -1,11 +1,26 @@
+.substring__wrapper {
+  padding: 10px 0;
+}
+
+.substring__title {
+  @include reset-text;
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
 .substring__form {
   display: flex;
   flex-direction: column;
   width: 250px;
 }
 
+.substring__label {
+  margin-bottom: 5px;
+}
+
 .substring__buttons-wrapper {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  padding-top: 20px;
 }

@@ -6,4 +6,12 @@
       margin-left: 250px;
     }
   }
+
+  @media (min-width: $desktop) {
+    margin-left: 250px;
+
+    &--menu-toggle {
+      margin-left: 0;
+    }
+  }
 }
