@@ -1,0 +1,144 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Render App 1`] = `
+Array [
+  <header
+    className="header"
+  >
+    <div
+      className="container"
+    >
+      <div
+        className="header__wrapper"
+      >
+        <button
+          aria-label="Показать/скрыть меню"
+          className="header__menu-toggle"
+          onClick={[Function]}
+          type="button"
+        >
+          Меню
+        </button>
+      </div>
+    </div>
+  </header>,
+  <main
+    className="page-main"
+  >
+    <section
+      className="menu"
+    >
+      <div
+        className="menu__wrapper"
+      >
+        <nav
+          className="menu__navigation"
+        >
+          <ul
+            className="sidebar menu__sidebar"
+          >
+            <li
+              className="sidebar__item"
+            >
+              <a
+                className="sidebar__link"
+                href="/"
+                onClick={[Function]}
+              >
+                Главная страница
+              </a>
+            </li>
+            <li
+              className="sidebar__item"
+            >
+              <a
+                className="sidebar__link"
+                href="/movement"
+                onClick={[Function]}
+              >
+                Функция сдвига элементов вправо на N шагов
+              </a>
+            </li>
+            <li
+              className="sidebar__item"
+            >
+              <a
+                className="sidebar__link"
+                href="/substring"
+                onClick={[Function]}
+              >
+                Функция нахождения самой длинной последовательности 2х строк
+              </a>
+            </li>
+            <li
+              className="sidebar__item"
+            >
+              <a
+                className="sidebar__link"
+                href="/checkboxes"
+                onClick={[Function]}
+              >
+                Отображение/скрытие элементов при переключении чек-боксов
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </section>
+    <section
+      className="tasks"
+    >
+      <div
+        className="container"
+      >
+        <div
+          className="tasks__wrapper"
+        >
+          <h2
+            className="tasks__title"
+          >
+            Выполненные задания
+          </h2>
+          <ul
+            className="tasks__list"
+          >
+            <li
+              className="tasks__item"
+            >
+              <a
+                className="tasks__link"
+                href="/movement"
+                onClick={[Function]}
+              >
+                Функция сдвига элементов массива вправо на N шагов.
+              </a>
+            </li>
+            <li
+              className="tasks__item"
+            >
+              <a
+                className="tasks__link"
+                href="/substring"
+                onClick={[Function]}
+              >
+                Функция нахождения самой длинной общей последовательности 2х строк.
+              </a>
+            </li>
+            <li
+              className="tasks__item"
+            >
+              <a
+                className="tasks__link"
+                href="/checkboxes"
+                onClick={[Function]}
+              >
+                Отображение/скрытие элементов при переключении чекбоксов.
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>,
+]
+`;

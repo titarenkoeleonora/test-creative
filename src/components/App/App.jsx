@@ -6,9 +6,9 @@ import Menu from "../Menu/Menu";
 import Checkboxes from "../Checkboxes/Checkboxes";
 import Movement from "../Movement/Movement";
 import Substring from "../Substring/Substring";
-import AboutMe from "../AboutMe/AboutMe";
+import Tasks from "../Tasks/Tasks";
 
-const App = () => {
+const App = ({animals}) => {
   const menuRef = useRef(null);
   const pageMainRef = useRef(null);
 
@@ -23,10 +23,13 @@ const App = () => {
         <Header toggleMenu={toggleMenu} />
         <main className="page-main" ref={pageMainRef}>
           <Menu myref={menuRef} />
-          <Route path="/" component={AboutMe} exact />
+          <Route path="/" component={Tasks} exact />
           <Route path="/movement" component={Movement} />
           <Route path="/substring" component={Substring} />
-          <Route path="/checkboxes" component={Checkboxes} />
+          <Route
+            path="/checkboxes"
+            component={() => (<Checkboxes animals={animals} />)}
+          />
         </main>
       </Router>
     </>

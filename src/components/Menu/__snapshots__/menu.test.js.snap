@@ -1,0 +1,64 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Render Menu component 1`] = `
+<section
+  className="menu"
+>
+  <div
+    className="menu__wrapper"
+  >
+    <nav
+      className="menu__navigation"
+    >
+      <ul
+        className="sidebar menu__sidebar"
+      >
+        <li
+          className="sidebar__item"
+        >
+          <a
+            className="sidebar__link"
+            href="/"
+            onClick={[Function]}
+          >
+            Главная страница
+          </a>
+        </li>
+        <li
+          className="sidebar__item"
+        >
+          <a
+            className="sidebar__link"
+            href="/movement"
+            onClick={[Function]}
+          >
+            Функция сдвига элементов вправо на N шагов
+          </a>
+        </li>
+        <li
+          className="sidebar__item"
+        >
+          <a
+            className="sidebar__link"
+            href="/substring"
+            onClick={[Function]}
+          >
+            Функция нахождения самой длинной последовательности 2х строк
+          </a>
+        </li>
+        <li
+          className="sidebar__item"
+        >
+          <a
+            className="sidebar__link"
+            href="/checkboxes"
+            onClick={[Function]}
+          >
+            Отображение/скрытие элементов при переключении чек-боксов
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</section>
+`;

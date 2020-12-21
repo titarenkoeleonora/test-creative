@@ -1,0 +1,78 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Render Movement component 1`] = `
+<section
+  className="movement"
+>
+  <div
+    className="container"
+  >
+    <div
+      className="movement__wrapper"
+    >
+      <h2
+        className="movement__title"
+      >
+        Функция сдвига элементов массива вправо на N шагов
+      </h2>
+      <form
+        className="movement__form"
+        method="post"
+      >
+        <label
+          className="movement__label"
+          id="movement-array"
+        >
+          Введите числа или буквы
+        </label>
+        <input
+          className="movement__input input-text"
+          htmlFor="movement-array"
+          onInput={[Function]}
+          pattern="/\\\\d+/g"
+          required={true}
+          type="text"
+        />
+        <label
+          className="movement__label"
+          id="movement-count"
+        >
+          Введите кол-во шагов для передвижения массива
+        </label>
+        <input
+          className="movement__input  input-text"
+          htmlFor="movement-count"
+          onInput={[Function]}
+          required={true}
+          type="number"
+        />
+        <div
+          className="movement__buttons-wrapper"
+        >
+          <button
+            aria-label="Показать результат"
+            className="movement__submit-button button"
+            onClick={[Function]}
+            type="submit"
+          >
+            Показать результат
+          </button>
+          <button
+            aria-label="Очистить форму"
+            className="movement__reset-button button"
+            onClick={[Function]}
+            type="reset"
+          >
+            Очистить
+          </button>
+        </div>
+      </form>
+      <p
+        className="movement__result-text"
+      >
+        Для просмотра результата откройте консоль (F12)
+      </p>
+    </div>
+  </div>
+</section>
+`;

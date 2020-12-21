@@ -1,0 +1,58 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Render Tasks component 1`] = `
+<section
+  className="tasks"
+>
+  <div
+    className="container"
+  >
+    <div
+      className="tasks__wrapper"
+    >
+      <h2
+        className="tasks__title"
+      >
+        Выполненные задания
+      </h2>
+      <ul
+        className="tasks__list"
+      >
+        <li
+          className="tasks__item"
+        >
+          <a
+            className="tasks__link"
+            href="/movement"
+            onClick={[Function]}
+          >
+            Функция сдвига элементов массива вправо на N шагов.
+          </a>
+        </li>
+        <li
+          className="tasks__item"
+        >
+          <a
+            className="tasks__link"
+            href="/substring"
+            onClick={[Function]}
+          >
+            Функция нахождения самой длинной общей последовательности 2х строк.
+          </a>
+        </li>
+        <li
+          className="tasks__item"
+        >
+          <a
+            className="tasks__link"
+            href="/checkboxes"
+            onClick={[Function]}
+          >
+            Отображение/скрытие элементов при переключении чекбоксов.
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+`;

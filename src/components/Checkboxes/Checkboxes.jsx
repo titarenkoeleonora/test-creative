@@ -1,10 +1,10 @@
 import {useState} from "react";
 
-import animals from "../../mocks/mocks";
 
-const Checkboxes = () => {
+const Checkboxes = ({animals}) => {
   const [checkedInputs, setCheckedInputs] = useState([false, false, false]);
   const [checkboxAllChecked, setCheckboxAllChecked] = useState(false);
+  console.log(animals)
 
   const getCheckedInputs = (evt, index) => {
     const value = evt.target.checked;

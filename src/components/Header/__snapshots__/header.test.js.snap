@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Render Header component 1`] = `
+<header
+  className="header"
+>
+  <div
+    className="container"
+  >
+    <div
+      className="header__wrapper"
+    >
+      <button
+        aria-label="Показать/скрыть меню"
+        className="header__menu-toggle"
+        type="button"
+      >
+        Меню
+      </button>
+    </div>
+  </div>
+</header>
+`;

@@ -1,0 +1,75 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Render Substring component 1`] = `
+<section
+  className="substring"
+>
+  <div
+    className="container"
+  >
+    <div
+      className="substring__wrapper"
+    >
+      <h2
+        className="substring__title"
+      >
+        Функция нахождения последовательности 2х строк
+      </h2>
+      <form
+        className="substring__form"
+        method="post"
+      >
+        <label
+          className="substring__label"
+          htmlFor="first-string"
+        >
+          Введите первую строку:
+        </label>
+        <input
+          className="substring__input input-text"
+          id="first-string"
+          onInput={[Function]}
+          required={true}
+          type="text"
+        />
+        <label
+          className="substring__label"
+          htmlFor="second-string"
+        >
+          Введите вторую строку:
+        </label>
+        <input
+          className="substring__input input-text"
+          id="second-string"
+          onInput={[Function]}
+          required={true}
+          type="text"
+        />
+        <div
+          className="substring__buttons-wrapper"
+        >
+          <button
+            className="substring__button-submit button"
+            onClick={[Function]}
+            type="submit"
+          >
+            Показать результат
+          </button>
+          <button
+            className="substring__button-reset button"
+            onClick={[Function]}
+            type="reset"
+          >
+            Очистить
+          </button>
+        </div>
+      </form>
+      <p
+        className="substring__result-text"
+      >
+        Для просмотра результата откройте консоль (F12)
+      </p>
+    </div>
+  </div>
+</section>
+`;

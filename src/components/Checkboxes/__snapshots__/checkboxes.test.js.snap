@@ -1,0 +1,111 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Render Checkboxes component 1`] = `
+<section
+  className="checkboxes"
+>
+  <div
+    className="container"
+  >
+    <div
+      className="checkboxes__wrapper"
+    >
+      <h2
+        className="checkboxes__title"
+      >
+        Отображение/скрытие элементов при переключении чек-боксов
+      </h2>
+      <form
+        action="#"
+        className="checkboxes-form checkboxes__form"
+        method="get"
+      >
+        <p
+          className="checkboxes-form__title"
+        >
+          Ваше любимое животное:
+        </p>
+        <ul
+          className="checkboxes-form__list"
+        >
+          <li
+            className="checkboxes-form__item"
+          >
+            <input
+              checked={false}
+              className="checkbox checkboxes-form__checkbox visually-hidden"
+              id="all"
+              name="all"
+              onChange={[Function]}
+              type="checkbox"
+            />
+            <label
+              className="checkboxes-form__label"
+              htmlFor="all"
+            >
+              Все
+            </label>
+          </li>
+          <li
+            className="checkboxes-form__item"
+          >
+            <input
+              checked={false}
+              className="checkbox checkboxes-form__checkbox visually-hidden"
+              id="dog0"
+              name="dog"
+              onChange={[Function]}
+              type="checkbox"
+            />
+            <label
+              className="checkboxes-form__label"
+              htmlFor="dog0"
+            >
+              Собака
+            </label>
+            
+          </li>
+          <li
+            className="checkboxes-form__item"
+          >
+            <input
+              checked={false}
+              className="checkbox checkboxes-form__checkbox visually-hidden"
+              id="cat1"
+              name="cat"
+              onChange={[Function]}
+              type="checkbox"
+            />
+            <label
+              className="checkboxes-form__label"
+              htmlFor="cat1"
+            >
+              Кот
+            </label>
+            
+          </li>
+          <li
+            className="checkboxes-form__item"
+          >
+            <input
+              checked={false}
+              className="checkbox checkboxes-form__checkbox visually-hidden"
+              id="mouse2"
+              name="mouse"
+              onChange={[Function]}
+              type="checkbox"
+            />
+            <label
+              className="checkboxes-form__label"
+              htmlFor="mouse2"
+            >
+              Мышь
+            </label>
+            
+          </li>
+        </ul>
+      </form>
+    </div>
+  </div>
+</section>
+`;
